@@ -3,10 +3,7 @@ function solution(num, total) {
         total-=i
     }
     const a =total/num;
-    const answer = new Array(num).fill(a);
-    for(let i=0; i<num; i++){
-        answer[i]=answer[i]+i
-    }
+    const answer = new Array(num).fill().map((_,i)=>a+i);
     return answer;
 }
     
